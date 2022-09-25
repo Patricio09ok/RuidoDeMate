@@ -1,0 +1,311 @@
+/* Selector universal */
+*{
+     margin: 0;
+     padding: 0;
+}
+
+html{
+     width: 100%;
+}
+
+
+.borderRadius{
+     border-radius: 2em;
+}
+
+/* header sticky y color de fondo */
+header{
+     position: sticky;
+     top: 0%;
+     background-color: #4AA924;
+     margin-bottom: 2%;
+     display: flex;
+     justify-content: flex-start;
+}
+
+/* Logo sitio web */
+.logo{
+     padding: 5px;
+     margin: 5px;
+}
+
+/* lista de menu de navegacion y estilos */
+header nav ul li a{
+     text-decoration: none;
+     color: black;
+}
+
+a:hover{
+     color: cornflowerblue;
+}
+
+header nav ul li{
+     list-style-type: none;
+}
+
+header nav ul{
+     display: flex;
+     justify-content: space-evenly;
+     margin: 10px 0px;
+}
+
+header nav{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+}
+
+li{
+     margin-right: 5em;
+}
+/* Pagina de inicio */
+.banner{
+     width: 80%;
+     height: auto;
+}
+
+.bannerCarousel{
+     display: flex;
+     justify-content: center;
+}
+
+.flexVideo{
+     margin: 2em;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+} 
+
+.videoPresentacion{
+     margin: 1em;
+     border-radius: 1em;
+}
+
+.video{
+     font-size: xx-large;
+     margin: 2em;
+}
+
+/* Galeria */
+.contImg img{
+     width: 20%;
+     height: 300px;
+     border-radius: 15px;
+     margin: 2%;
+}
+
+.galeria, .masContenido, .tercero{
+     margin-top: 5%;
+}
+
+.centrado{
+     text-align: center;
+     margin-bottom: 10px;
+     color: green;
+}
+
+/* Productos */
+.gridContainer{
+     display: grid;
+     grid-template-columns: 15% 20% 20% 20% 20%;
+     gap: 0.5rem;
+}
+
+.gridItem{
+     background-color: #63BD69;
+     padding: 15px;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.gridItem img{
+     width: 200px;
+     height: 250px;
+     transition: 0.5s;
+     box-shadow: 0px 10px 30px 0px rgb(0,0,0,0.5);;
+     background-color: #63BD69;
+     padding: 5px;
+}
+
+.gridItem img:hover{
+     transform: scale(1.2);
+}
+
+.gridItem h2{
+     color: black;
+     margin: 10px;
+     margin-top: 30px;
+     background-color: #B6F9AB;
+     padding: 10px;
+     border-radius: 10px;
+     font-size: 15px;
+}
+
+.filtros ol li a{
+     text-decoration: none;
+}
+
+.filtros ol li{
+     padding: 5px;
+     list-style-type: none;
+}
+
+.filtros{
+     display: grid;
+     grid-row: 1 / span 2;
+     padding: 1em;
+}
+
+/* Footer */
+footer{
+     display: flex;
+     justify-content: space-around;
+     padding: 1em;
+     background-color: #4AA924;
+     margin-top: 2em;
+}
+
+.flexEnd{
+     display: flex;
+     justify-content: flex-end;
+}
+
+svg{
+     margin-right: 10px;
+}
+
+.margin-p{
+     margin-right: 1em;
+}
+/* Body, color menos footer y header, Letras*/
+body{
+     background-color: #E7FFE9;
+     font-family: 'Roboto', sans-serif;
+}
+
+h1, h2{
+     color: green;
+     text-align: center;
+     margin-bottom: 2%;
+}
+
+/* Formulario */
+.flexContainer{
+     display: flex;
+     align-items: center;
+     flex: wrap;
+     justify-content: center;
+     margin: 50px 50px;
+     padding: 20px;
+     background-color: #4AA924;
+     border: 8px solid transparent;
+     outline: 4px solid black;
+     border-radius: 1em;
+}
+
+.form{
+     min-width: 400px;
+     flex: 1;
+     text-align: center;
+     padding: 30px;
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+}
+
+.formInput{
+     width: 100%;
+     padding: 7px;
+     margin: 6px 0;
+     border: 4px solid green;
+     border-radius: 10px;
+     box-sizing: border-box;
+}
+
+.formInput:focus{
+     background: linear-gradient(to bottom, transparent, #B6F9AB);
+     outline: none;
+}
+
+.form textarea{
+     min-height: 140px;
+     resize: none;
+}
+
+.formImg{
+     flex: 1;
+     padding: 10px;
+     display: flex;
+     min-width: 300px;
+     max-width: 400px;
+}
+
+.formImg img{
+     width: 100%;
+     border-radius: 20px;
+}
+
+.form input[type="submit"] {
+     background-color: #4AA924;
+     padding: 12px;
+}
+
+.form input[type="submit"]:hover {
+     background-color: #248024;
+     padding: 12px;
+}
+
+.seleccionar{
+     text-align: center;
+     width: 100%;
+     padding: 12px 20px;
+     margin: 5px 0;
+     box-sizing: border-box;
+}
+
+/* Informacion */
+.imgInfoUno{
+     margin: 1em;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
+
+.info{
+     font-size: medium;
+     padding: 1em;
+     margin: 1em;
+}
+
+/* Nosotros */
+.marginImg{
+     margin: 2em;
+     border-radius: 1em;
+}
+
+/* Position de imagenes y parrafos de la pagina nosotros */
+.flexImg{
+     display: flex;
+     flex-direction: row-reverse;
+     text-align: center;
+     align-items: center;
+}
+
+.flexImgDos{
+     display: flex;
+     flex-direction: row;
+     text-align: center;
+     align-items: center;
+}
+
+.parrafoNosotros{
+     background-color: #63BD69;
+     font-size: x-large;
+     margin: 3em;
+     border-radius: 1em;
+}
