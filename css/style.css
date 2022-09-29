@@ -109,9 +109,9 @@ li{
 /* Productos */
 .gridContainer{
      display: grid;
-     grid-template-columns: 15% 20% 20% 20% 20%;
      gap: 0.5rem;
 }
+
 
 .gridItem{
      background-color: #63BD69;
@@ -308,4 +308,14 @@ h1, h2{
      font-size: x-large;
      margin: 3em;
      border-radius: 1em;
+}
+
+/* Mobile first */
+@media screen and (min-width: 400px) and (max-width: 767px) {
+     .gridContainer {
+          display: grid;
+          grid-template-columns: repeat(5,1fr);
+          grid-template-rows: repeat(1,fr);
+          gap: 0,5;
+     }
 }
